@@ -37,6 +37,10 @@ We simulate three distinct types of financial fraud to test the model's robustne
 | **Impossible Travel** | Transactions occur in drastically different locations (e.g., NY -> London) in impossible times. | `speed_kmh` > 800 |
 | **Amount Spikes** | A purchase is 10x-50x larger than the user's historical average. | `amt_ratio` > 10.0 |
 
+### Data Distribution & Patterns
+![Data Distribution](fraud_detection/model/data_distribution.png)
+
+
 ---
 
 ## 📂 Project Structure
@@ -116,6 +120,8 @@ We use **SHAP (SHapley Additive exPlanations)** to ensure the model isn't "cheat
 1.  **`count_1h`**: Velocity attacks are the #1 strongest signal.
 2.  **`speed_kmh`**: Impossible travel is effectively caught.
 3.  **`amt_ratio`**: Anomalous spending behavior is flagged.
+
+![SHAP Summary](fraud_detection/model/shap_summary.png)
 
 ---
 **Author**: Vedant Bhosale
