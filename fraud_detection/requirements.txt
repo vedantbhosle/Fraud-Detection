@@ -1,0 +1,9 @@
+pandas
+numpy
+faker
+tqdm
+xgboost
+scikit-learn
+shap
+matplotlib
+seaborn

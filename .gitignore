@@ -1,0 +1,28 @@
+# System Files
+.DS_Store
+.checkpoints
+*_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+env/
+venv/
+.env
+
+# Generated Data (Don't commit large datasets)
+fraud_detection/data/*.csv
+
+# Model Artifacts (Don't commit large binaries)
+fraud_detection/model/*.pkl
+
+# Logs
+*.log
+
+# IDE Settings
+.vscode/
+.idea/
